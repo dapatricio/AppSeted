@@ -1,0 +1,239 @@
+<!--
+  ~ Created by Daniel Peñarreta.
+  ~ Copyright (c) 2016.  All rights reserved.
+  -->
+
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <string name="app_name">Prevención Drogas Ec</string>
+
+    <string name="action_settings">Configuración</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Textos Cocaina-->
+    <string name="txtEfectos1">A corto plazo: hipertensión, arritmias cardiacas, infartos de miocardio, ruptura de la aorta, hemorragia en los alveolos pulmonares, neumotórax, trombosis pulmonar y reacción de hipersensibilidad pulmonar, pérdida del olfato, abortos espontáneos, muerte fetal, se puede producir insuficiencia renal.
+A largo plazo: gangrena intestinal (cocaína ingerida), complicaciones otorrinolaringológicas, debido al consumo esnifado produce rinitis crónica hasta producir erosiones o perforaciones del tabique nasal, depresión, ansiedad, paranoias, conductas violentas, psicosis, pérdida del sentido de la realidad, alucinaciones auditivas, reacciones alérgicas en piel (cocaína inyectada), infecciones por la vía de consumo: hepatitis b, sida.
+    </string>
+
+    <string name="txtRiesgos1">Las personas que consumen cocaína también se exponen al riesgo de contraer el VIH, aun cuando no compartan las agujas y otras drogas. Esto se debe a que la intoxicación por cocaína afecta el juicio y puede llevar a comportamientos sexuales riesgosos.
+La cocaína es más peligrosa cuando se combina con otras drogas o con el alcohol (policonsumo de drogas). Por ejemplo, la combinación de cocaína y heroína (conocido como un “speedball”), lleva un riesgo particularmente alto de sobre-dosis fatal.
+    </string>
+
+    <string name="txtAbstinencia1">El síndrome de abstinencia se observa a las pocas horas o días de disminuir o eliminar su ingesta. Los síntomas fundamentales son la disforia, fatiga, insomnio o hipersomnia, incremento del apetito, retardo o agitación psicomotriz.
+    </string>
+
+    <string name="txtDependencia1">La cocaína tiene un efecto de muy corta duración en el organismo, produce taquifilaxia (tolerancia a los fármacos), y para mantener los mencionados efectos se requiere administraciones frecuentes. La dependencia avanzada se caracteriza por la falta de voluntad para dejar de consumir y un incremento en el deseo de consumir y puede incurrir en actividades como robo, prostitución para obtener la sustancia.
+El consumo repetido a menudo también crea tolerancia a la cocaína. Los consumidores de cocaína tratan en vano de conseguir que la droga les produzca el mismo placer que sintieron la primera vez que la usaron.
+    </string>
+
+    <string name="txtIntoxicacion1">La intoxicación aguda se caracteriza por: palpitaciones, bradicardia o taquicardia, arritmias, hipertensión e infarto de miocardio, entre otros.
+    </string>
+
+    <!--Textos Cannabis-->
+    <string name="txtEfectos2">El consumo de cannabis produce generalmente un efecto bifásico. Tras una fase inicial de estimulación (euforia, bienestar, aumento de la percepción, ansiedad), le sigue una fase donde predomina la sedación (relajación, somnolencia, sueño). Se produce una agudización de las percepciones visuales, auditivas y táctiles, así como una ligera distorsión del espacio y tiempo. También aparece risa fácil, locuacidad y aumento del apetito. Paralelamente se altera la memoria reciente, y existe dificultad en la concentración, disminución de la atención e incoordinación motora. En algunos sujetos, especialmente en inexpertos o tras dosis elevadas puede aparecer ansiedad, disforia, síntomas paranoides y/o pánico, que habitualmente desaparecen de forma espontánea en pocas horas.
+    </string>
+
+    <string name="txtRiesgos2">La marihuana deteriora la memoria a corto plazo (de sucesos recientes) y, por lo tanto, dificulta la realización de tareas complejas. Con el uso de las variedades más potentes de la droga, pueden surgir problemas para realizar incluso tareas sencillas. Debido a los efectos de la droga sobre las percepciones y los reflejos, también puede ser causa de accidentes de tráfico. El uso de esta droga aumenta la propensión a conductas de riesgo para adquirir enfermedades de transmisión sexual, incluida la adquisición del VIH. Se sabe que existe una fuerte relación entre el uso de drogas y las prácticas sexuales peligrosas.
+    </string>
+
+    <string name="txtAbstinencia2">El síndrome de abstinencia se caracteriza por irritabilidad, agresividad, inquietud, nerviosismo, ansiedad, disminución o pérdida del apetito y dificultades para dormir. Este síndrome puede aparecer a los 3-7 días de cesar el consumo y suele resolverse pasados unos 28 días.
+    </string>
+
+    <string name="txtDependencia2">La dependencia de la marihuana parece ser muy similar a otros trastornos presentes en otras sustancias, sin embargo estos pueden ser menos graves. Es importante señalar que la dependencia de la marihuana es más frecuente entre los pacientes que sufren de otros trastornos psiquiátricos, en particular entre las poblaciones de adolescentes y adultos jóvenes.
+    </string>
+
+    <string name="txtIntoxicacion2">La intoxicación por cannabis puede presentarse por el grado de concentración deTHC, la falta de experiencia y el uso de la vía oral son circunstancias que facilitan su aparición. Sus síntomas son: taquicardia, síntomas vegetativos (palidez cutánea, sudoración, náuseas, dolor abdominal, que puede llegar a desencadenar un síncope. Pero la intoxicación aguda por cannabis puede presentarse como un cuadro con predominio de síntomas de tipo psicológico como: disforia, ansiedad, inquietud, agitación psicomotora, dificultad para seguir el curso del pensamiento, alteraciones en la percepción temporal.
+    </string>
+
+    <!--Textos Pasta base-->
+    <string name="txtEfectos3">Los efectos de fumar pasta base de cocaína se pueden dividir en 4 etapas:
+
+Euforia: se observa sensación de placer, hipervigilancia, hiperexcitabilidad, éxtasis, cambios en los niveles de atención, aceleración de los procesos de pensamiento. Cuando las dosis ingeridas son bajas, estos procesos se mantienen coherentes. Además se produce una disminución notable del apetitito, la fatiga y el sueño.
+Entre los cambios físicos se produce un aumento de presión sanguínea, ritmo cardíaco, temperatura corporal y ritmo respiratorio.
+
+Disforia, la persona empieza a sentirse angustiada, deprimida e insegura, con un deseo incontenible de seguir fumando, tristeza, apatía, entre otras.
+Consumo ininterrumpido para evitar la etapa dos.
+Psicosis y alucinaciones. Las alucinaciones pueden ser visuales, cutáneas, auditivas y olfatorias. La psicosis presenta agitación, ideas paranoides, agresividad, alucinaciones, entre otros, estos episodios pueden durar semanas o meses.
+
+Los efectos físicos son: pérdida de peso, palidez, taquicardia, insomnio, verborrea, midriasis (dilatación de la pupila). Algunas personas presentan náuseas, vómitos, sequedad en la boca, sudor, diarrea, temblor, agitación psicomotora, picazón, hipertensión arterial, fiebre, falta de coordinación, dolor de cabeza, mareos, entre otros.
+    </string>
+
+    <string name="txtRiesgos3">La PBC es una sustancia muy adictiva. Esto porque la excitación y el bienestar que provoca son muy breves, lo que se acompaña inmediatamente de una fuerte sensación de angustia. Y evitarla es el motivo para seguir consumiendo PBC.
+    </string>
+
+    <string name="txtAbstinencia3">La abstinencia se caracteriza porque se presenta un comportamiento antisocial, déficit de la memoria, fatiga de la atención, desinterés a nivel laboral y académico, entre otros.
+    </string>
+
+    <string name="txtDependencia3">Las cualidades adictivas de esta sustancia se caracterizan por producir una sensación inicial de excitación y bienestar de corta duración, lo que ocasiona angustia al consumidor y lo lleva a aumentar la frecuencia y dosis de la misma con el fin de evitar el malestar que se produce cuando se esta se elimina de los centros nerviosos.La tolerancia de la pasta base puede desarrollarse en formas diferentes: cambios metabólicos, neuronales, físicos, psicológicos, esto da lugar a la necesidad de incrementar la cantidad y/o frecuencia  en el consumo de la sustancia para obtener el placer inicial.
+    </string>
+
+    <string name="txtIntoxicacion3">Los síntomas son: hipertensión arterial, accidentes vasculares, sinusitis, bronquitis, lesión pulmonar, disnea, broncoespasmo, euforia, disforia, síntomas psicóticos como alucinaciones y paranoias, irritabilidad e impulsividad, problemas en el embarazo.
+    </string>
+
+    <!--Textos heroina-->
+    <string name="txtEfectos4">Después de una inyección endovenosa de heroína, el usuario presenta una oleada de euforia (“rush”) acompañada de sequedad en la boca, enrojecimiento caliente de la piel, pesadez en las extremidades y confusión mental. Después de esta euforia inicial, el usuario pasa a una sensación de estar volando (“on the nod”), un estado en el que se alterna entre estar completamente despierto y adormecido. Los usuarios que no se inyectan la droga podrían no sentir la euforia inicial, pero los demás efectos son los mismos.
+    </string>
+
+    <string name="txtRiesgos4">Las vías de administración de la sustancia pueden provocar el contagio y transmisión de enfermedades tales como: hepatitis, el VIH, tuberculosis, de transmisión sexual u otras enfermedades. La inyección puede colapsar las venas, causar infección en el revestimiento del corazón o en las válvulas o crear abscesos. Si no se trata, la mayoría de estas condiciones pueden progresar y convertirse en enfermedades más graves que producen la muerte.
+    </string>
+
+    <string name="txtAbstinencia4">Los síntomas se caracterizan por: bostezos, midriasis, rinorrea, dolor muscular, náuseas, vómitos, diarrea, fiebre, insomnio, inquietud, ansiedad, entre otros. El síndrome depresivo es una manifestación más de la abstinencia y produce, en algunos casos, sensación de muerte inminente que, junto a la intensidad de los síntomas, llega a impedir la superación de este proceso y es causa de muchas de las recaídas.
+    </string>
+
+    <string name="txtDependencia4">El consumo problemático de la heroína produce dependencia física y psicológica. Si el consumidor problemático disminuye o suspende abruptamente el consumo de la sustancia, puede experimentar síntomas tales como dolor muscular y óseo, insomnio, diarrea, vómito, escalofríos, movimientos en forma de patadas (“kicking the habit”). Una vez se ha desarrollado tolerancia a la heroína, se necesita incrementar la dosis para conseguir el mismo efecto.
+    </string>
+
+    <string name="txtIntoxicacion4">La intoxicación por analgésicos opioides, se caracteriza por la triada: miosis (pupilas puntiformes), depresión respiratoria y coma. Produce paro respiratorio, respiración lenta y forzada, boca seca, pupilas extremadamente pequeñas (“pupilas puntiformes), decoloración de la lengua, presión arterial baja, pulso débil, labios y uñas azuladas, estreñimiento, espasmos estomacales y del tubo digestivo, delirio, desorientación, somnolencia, espasticidad muscular. El edema agudo de pulmón es la complicación más frecuente de la sobredosis de heroína.
+    </string>
+
+    <!--Textos extasis-->
+    <string name="txtEfectos5">Los síntomas físicos agudos son: contracciones de la mandíbula, incremento de la frecuencia cardíaca y de la presión sanguínea, bruxismo, pérdida de apetito, hipertermia, deshidratación, midriasis, mareos, náuseas o vómitos, astenia, cansancio, somnolencia, debilidad muscular, sequedad de boca, cefaleas. Los síntomas psíquicos agudos son: sensación subjetiva de bienestar, empatía, incremento de la intimidad y de la comunicación con los demás, euforia, conciencia emocional aumentada, incremento de la sensación de sensualidad, alteraciones de la memoria, dificultades en el lenguaje, atención y concentración, ideas paranoides, despersonalización, depresión, humor alterado, trastornos afectivos, insomnio.
+    </string>
+
+    <string name="txtRiesgos5">La MDMA es conocida como éxtasis y se ha determinado que muchas de éstas son adulteradas y se mezclan con otras drogas que pueden ser peligrosas. Entre los adulterantes encontrados en las tabletas de MDMA de venta en la calle se encuentran la metanfetamina, la cafeína, la efedrina (fármaco utilizado para perder peso) y la cocaína. Al igual que con otras drogas de abuso, la MDMA rara vez se usa sola.
+El consumo continuo de éxtasis en los adolescentes implica el riesgo de abandonar la escuela, ya que pierden el interés por las actividades escolares o laborales y además se hallan expuestos a conflictos legales.
+    </string>
+
+    <string name="txtAbstinencia5">La característica de la abstinencia del crack es que ocurre desde la primera dosis y se refuerza cuando su consumo es en gran cantidad o de forma regular.
+    </string>
+
+    <string name="txtDependencia5">La dependencia de esta droga es fundamentalmente de tipo psicológico, por lo que la abstinencia de ellas no se asocia con complicaciones médicas graves. Tras un uso prolongado y una suspensión brusca aparecen síntomas depresivos y ansiosos, fatiga, hipersomnia y aumento del apetito.
+    </string>
+
+    <string name="txtIntoxicacion5">La MDMA produce: náusea, escalofríos, sudoración, contractura involuntaria de los músculos de la mandíbula, calambres musculares y visión borrosa. También puede ocurrir una sobredosis con la droga. En este caso, los síntomas incluyen hipertensión arterial, sensación de desmayo, ataques de pánico, y en casos severos, pérdida del conocimiento y convulsiones.
+Debido a sus propiedades se asociada a actividades físicas vigorosas por largos períodos de tiempo, con incremento de la temperatura corporal (hipertermia). Además, las personas susceptibles pueden sufrir de deshidratación, hipertensión y fallo cardiaco.
+    </string>
+
+    <!--Textos crack-->
+    <string name="txtEfectos6">A corto plazo son: pérdida de apetito, incremento del ritmo cardíaco, presión sanguínea, temperatura corporal y del ritmo respiratorio, pupilas dilatadas, alteraciones del sueño, náuseas, alucinaciones, irritabilidad, agresividad, alucinaciones táctiles, euforia intensa, ansiedad y paranoia, depresión, pánico, psicosis, convulsiones, ataques y muerte repentina por dosis altas.A largo plazo: hipertensión arterial, derrames cerebrales, daño renal, pulmonar e hígado, fallo respiratorio, enfermedades infecciosas y abscesos si se inyecta, desnutrición, pérdida de peso, alucinaciones auditivas y táctiles, alteraciones sexuales, daño a los órganos reproductores e infertilidad (en hombres y mujeres), desorientación, apatía, irritabilidad y alteraciones del humor, agresividad, delirio o psicosis, depresión severa, entre otros.
+    </string>
+
+    <string name="txtRiesgos6">El crack comúnmente se mezcla con otras sustancias lo que crea gases tóxicos potentes de corta duración, lo que causa que el consumidor presione las pipas muy calientes entre sus labios y estos se partan y se produzcan las ampollas conocidas como “labio de crack”.
+    </string>
+
+    <string name="txtAbstinencia6">La característica de la abstinencia del crack es que ocurre desde la primera dosis y se refuerza cuando su consumo es en gran cantidad o de forma regular.
+    </string>
+
+    <string name="txtDependencia6">La dependencia de esta droga es fundamentalmente de tipo psicológico, por lo que la abstinencia de ellas no se asocia con complicaciones médicas graves. Tras un uso prolongado y una suspensión brusca aparecen síntomas depresivos y ansiosos, fatiga, hipersomnia y aumento del apetito.
+
+    </string>
+
+    <string name="txtIntoxicacion6">Se caracteriza por: insensibilidad, sequedad de boca, sensación de ardor en los ojos, sudoración, palpitaciones, dolor de cabeza, contracciones musculares, aumento en los reflejos y dilatación de las pupilas. El uso crónico produce irritabilidad, insomnio, pérdida de peso, hipertensión, arritmia cardiaca, temblores, accesos crónicos de tos, paranoia creciente, delirios, alucinaciones, infecciones pulmonares. Se ha comprobado que el uso de crack por mujeres embarazadas puede provocar deterioro fetal, retardo en el crecimiento intrauterino y parto prematuro. Los niños nacidos en estas condiciones, parecen estar destinados a sufrir conductas anormales. Los “bebés del crack”, como empieza a conocérseles, “tienen problemas para jugar y hablar con los otros niños.
+    </string>
+
+    <!--Textos Benzodiacepinas-->
+
+    <string name="descripcion7">
+        Son sustancias psicoactivas empleadas en mayor porcentaje para el alivio de la ansiedad; tienen efectos ansiolíticos, hipnótico-sedantes y anticonvulsionantes, también se utilizan para tratar cuadros depresivos, trastornos de pánico, fobias, parálisis cerebral infantil, paraplejia, epilepsia, trastornos del sueño.
+    </string>
+    <string name="txtEfectos7">Los efectos que con mayor frecuencia se observan son: somnolencia, sedación, fatiga, cefalea, vértigo, confusión, desorientación, trastornos amnésicos, disminución de la coordinación, relajación muscular excesiva.
+    </string>
+
+    <string name="txtRiesgos7">Los principales riesgos son su capacidad de generar tolerancia y posterior dependencia, si no se utilizan siguiendo la prescripción médica. Cuando sea recomendable la utilización de estas sustancias, se recomienda que el tratamiento no se alargue en el tiempo y que las dosis estén ajustadas a cada persona.
+La automedicación puede generar problemas de dependencia. La mezcla con otras sustancias, como el alcohol u otros depresores del SNC puede ser peligrosa.
+    </string>
+
+    <string name="txtAbstinencia7">La suspensión brusca del consumo de la sustancia produce el síndrome de abstinencia el cual se manifiesta con insomnio, tensión, aprehensión, anorexia, mareos, disminución de la audición. Es posible la aparición de síntomas más severos como temblores, dolor muscular, náuseas, vómito, pérdida de peso, ataques de pánico, alucinaciones e hiperactividad.
+    </string>
+
+    <string name="txtDependencia7">La dependencia es un conjunto de fenómenos conductuales, cognitivos y fisiológicos que se producen en el consumidor habitual de las benzodiacepinas, la privación del su uso puede generar diferentes manifestaciones.Pasado cierto tiempo en el tratamiento, se observa que estos fármacos pueden perder la efectividad inicial, aunque sigan manteniendo cierto control en la ansiedad. Esto nos indica que las benzodiacepinas pueden producir tolerancia (el organismo se adapta a dicha sustancia y en ocasiones esto requiere aumentar el consumo para conseguir los mismos efectos).
+    </string>
+
+    <string name="txtIntoxicacion7">Las sobredosis producen signos de toxicidad, ataxia, disartria, somnolencia y letargia. Sin embargo, las sobredosis importantes pueden provocar coma, hipotensión, hipotermia y dificultad respiratoria. Estas complicaciones suelen aparecer con más frecuencia si se ingieren de manera simultánea con otras drogas capaces de provocar depresión del SNC (en especial alcohol).
+    </string>
+
+    <!--Textos tabaco-->
+    <string name="txtEfectos8">Los efectos a corto plazo provocan: disminución de la capacidad pulmonar y de los sentidos del gusto y el olfato, envejecimiento prematuro de la piel de la cara, cuello y manos; mal aliento, color amarillento de dedos y dientes, tos y expectoraciones sobre todo matutinas.A largo plazo produce: irritaciones en las vías respiratorias, tos, acompañada de expulsión de moco que aparece especialmente por las mañanas, bronquitis crónica, enfisema pulmonar y aumenta la aparición de arteriosclerosis, aumenta el riesgo de padecer úlceras digestivas, favorece la aparición de faringitis y laringitis crónicas, afonía y alteraciones del olfato, alteraciones en el color de la lengua y de las papilas gustativas. Puede producir conjuntivitis en ambientes cerrados.El tabaquismo materno afecta de forma importante al crecimiento fetal, que se expresa especialmente por una reducción del peso del recién nacido. Origina también un incremento de las tasas de aborto espontáneo, de complicaciones durante el embarazo y el parto y de nacimientos prematuros cronológicos.
+    </string>
+
+    <string name="txtRiesgos8">Existen dos tipos de fumadores: los activos, que lo hacen por voluntad propia; y los pasivos, que inhalan el humo del tabaco involuntariamente los cuales pueden adquirir enfermedades respiratorias puesto que los residuos expelidos por el cigarro se mantienen en el aire y son aspirados por la gente de los alrededores, quienes, finalmente, sufrirán un efecto idéntico al que tendrían si fumaran de desarrollar cáncer pulmonar.
+La automedicación puede generar problemas de dependencia. La mezcla con otras sustancias, como el alcohol u otros depresores del SNC puede ser peligrosa.
+    </string>
+
+    <string name="txtAbstinencia8">Los síntomas son: irritabilidad, deseos vehementes por la sustancia (“craving”), déficit cognitivo y de atención, alteraciones del sueño, aumento del apetito. Estos síntomas pueden comenzar a las pocas horas después de haber fumado el último cigarrillo, haciendo que las personas vuelvan a fumar.
+    </string>
+
+    <string name="txtDependencia8">La dependencia del alcohol es un conjunto de fenómenos conductuales, cognitivos y fisiológicos que se producen en el consumidor habitual de esta sustancia, el cual se caracteriza por la gran intensidad o necesidad de beber alcohol, y la incapacidad para controlar su ingesta (craving). La tolerancia se produce por la adaptación del cuerpo a la presencia continua de alcohol. Existen alcohólicos que presentan tolerancia negativa en los que es suficiente una pequeña cantidad de etanol para que queden completamente ebrios.
+    </string>
+
+    <string name="txtIntoxicacion8">La intoxicación aguda por nicotina se caracteriza por: nauseas, dolor abdominal, vómito, diarrea, sudoración fría, cefalea, mareos, trastornos de audición y visión, confusión mental, entre otros.
+    </string>
+
+    <!--Textos alcohol-->
+    <string name="txtEfectos9">El consumo excesivo del alcohol produce: gastritis crónica, úlceras estomacales, hemorragias digestivas, hepatitis alcohólica, hígado adiposo, cirrosis hepática, pancreatitis, hipertensión arterial, impotencia en los varones, menopausia precoz en las mujeres, cáncer de esófago, trastornos en la memoria, entre otros.
+    </string>
+
+    <string name="txtRiesgos9">El alcohol es la droga más consumida en nuestro medio, es la sustancia de la que más se abusa y provoca daños a nivel social y familiar (accidentes de tránsito y laborales, problemas de salud, violencia intrafamiliar, prostitución, delincuencia, agresividad, entre otros)
+    </string>
+
+    <string name="txtAbstinencia9">Conjunto de trastornos físicos y psicológicos que presenta quien ha desarrollado dependencia al alcohol y suspende bruscamente su consumo. Se caracteriza por presentar los siguientes síntomas: inquietud, nerviosismo, ansiedad, calambres musculares, temblores, náuseas, vómitos, irritabilidad; entre otros.
+    </string>
+
+    <string name="txtDependencia9">La dependencia del alcohol es un conjunto de fenómenos conductuales, cognitivos y fisiológicos que se producen en el consumidor habitual de esta sustancia, el cual se caracteriza por la gran intensidad o necesidad de beber alcohol, y la incapacidad para controlar su ingesta (craving). La tolerancia se produce por la adaptación del cuerpo a la presencia continua de alcohol. Existen alcohólicos que presentan tolerancia negativa en los que es suficiente una pequeña cantidad de etanol para que queden completamente ebrios.
+    </string>
+
+    <string name="txtIntoxicacion9">Se manifiesta por: cambios de comportamiento, desinhibición de impulsos sexuales, agresividad, deterioro de la capacidad de juicio y de la actividad social o laboral, marcha inestable, rubor facial, cambio del estado de ánimo, irritabilidad, locuacidad y disminución de la capacidad de atención, hipotensión, hipotermia, pérdida de conciencia, convulsiones y otros.
+    </string>
+
+    <!--Descripcion drogas-->
+    <string name="consumoDrogas">El consumo excesivo de alcohol, tabaco y otras drogas, es un problema de todos.
+Es muy importante tener en cuenta que existe un mayor riesgo cuando el uso y consumo de cualquiera de estas drogas se inicia a edades tempranas, porque las consecuencias serán más graves dado que se encuentran en una etapa de formación y desarrollo.
+Niños y adolescentes pueden sentir curiosidad respecto al consumo de tabaco, alcohol y otras drogas y pueden incluso probarlas. De ahí la importancia de que sea la familia la que responda cualquier duda con respecto al uso y consumo de drogas, mediante una comunicación clara y transparente con sus hijos.
+El mejor momento para comenzar a hablar con tu hijo adolescente sobre las drogas y alcohol es ahora.
+    </string>
+    <string name="title_activity_mapa_google">Mapa Centros de Salud</string>
+
+
+    <!-- textos youtube -->
+    <string name="player_error">Error initializing YouTube player</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="txt1">Los momentos claves en tu vida son las decisiones, que ponen en juego muchas cosas en las que luego se van a definir caminos, destinos y a veces el futuro de tu historia personal. \n
+Un momento de debilidad frente a una decisión, marca frecuentemente el largo sendero de un cortejo interminable de equivocaciones.</string>
+    <string name="txt2">El consumo excesivo de alcohol, tabaco y otras drogas, es un problema de todos. \n
+Es muy importante tener en cuenta que existe un mayor riesgo cuando el uso y consumo de cualquiera de estas drogas se inicia a edades tempranas, porque las consecuencias serán más graves dado que se encuentran en una etapa de formación y desarrollo.</string>
+    <string name="txt3">EL Alcohol influye de manera diferente en cada uno de nosotros, aprende como lo hace.</string>
+    <string name="txt4">Somos la entidad que trabaja junto a la ciudadanía en beneficio de la prevención integral al uso y consumo de drogas.</string>
+
+    <string name="objetivos">
+        1.- Incrementar los procesos coordinados y articulados de prevención integral referente al uso y
+consumo de drogas y sus diferentes manifestaciones en el ámbito nacional.\n
+        \n
+        2.- Incrementar la eficiencia en el control de sustancias catalogadas sujetas a fiscalización.\n
+        \n
+        3.- Incrementar la evaluación, investigación y generación de conocimiento para el
+direccionamiento de la política pública sobre drogas.
+    </string>
+
+
+    <string-array name="provincias">
+        <item>Pichincha</item>
+        <item>Loja</item>
+        <item>Azuay</item>
+        <item>Guayas</item>
+    </string-array>
+
+    <string-array name="cantonLoja">
+        <item>Loja</item>
+        <item>Catamayo</item>
+        <item>Paltas</item>
+    </string-array>
+
+    <string-array name="cantonPichin">
+        <item>Quito</item>
+        <item>Cayambe</item>
+        <item>Mejia</item>
+    </string-array>
+    <string-array name="cantonAzuay">
+        <item>Cuenca</item>
+        <item>Gualaceo</item>
+        <item>Girón</item>
+    </string-array>
+    <string-array name="cantonGuayas">
+        <item>Guayaquil</item>
+        <item>Daule</item>
+        <item>Playas</item>
+    </string-array>
+</resources>

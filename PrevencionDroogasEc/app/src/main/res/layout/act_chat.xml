@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Daniel Peñarreta.
+  ~ Copyright (c) 2016.  All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.seted.prevencionec.ui.Act_chat"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bordelogin">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#0000FF">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:padding="1dip"
+                android:layout_marginLeft="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btnback"
+                android:adjustViewBounds="true"
+                android:background="#0000FF"
+                android:layout_marginTop="5dp"/>
+
+            <ImageButton
+                android:id="@+id/btnHome"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:padding="1dip"
+                android:layout_marginLeft="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btnhome"
+                android:adjustViewBounds="true"
+                android:background="#0000FF"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:text="Chat en Linea SETED"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17"
+                android:textSize="22dip"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Usuario"
+                android:drawableLeft="@drawable/ico_user"
+                android:textColor="#000"
+                android:id="@+id/txtUsuario"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:drawableLeft="@drawable/ico_clave"
+                android:textColor="#000"
+                android:inputType="textPassword"
+                android:id="@+id/txtClave"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ingresar"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ico_desblo"
+                android:id="@+id/btnLogin"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

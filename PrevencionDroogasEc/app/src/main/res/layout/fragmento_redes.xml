@@ -1,0 +1,193 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Siguenos en:"
+        android:textColor="#d1000000"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TableRow
+                android:layout_width="500dip"
+                android:layout_height="100dip">
+
+                <ImageButton
+                    android:id="@+id/btnFace"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/face"
+                    android:background="#fff"
+                    android:onClick="btnFace"
+                    android:padding="40dp"
+                    android:layout_marginTop="-10dip"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="500dip"
+                android:layout_height="100dip">
+
+                <ImageButton
+                    android:id="@+id/btnTwitter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/twitter"
+                    android:background="#fff"
+                    android:onClick="btnTwitter"
+                    android:layout_marginTop="-10dip"
+                    android:padding="40dp"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="500dip"
+                android:layout_height="100dip">
+
+                <ImageButton
+                    android:id="@+id/btnRetuco"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/retuco"
+                    android:background="#fff"
+                    android:onClick="btnRetuco"
+                    android:layout_marginTop="-10dip"
+                    android:padding="40dp"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="500dip"
+                android:layout_height="100dip">
+
+                <ImageButton
+                    android:id="@+id/btnFlickr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/flickr"
+                    android:background="#fff"
+                    android:onClick="btnFlickr"
+                    android:layout_marginTop="-10dip"
+                    android:padding="40dp"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="500dip"
+                android:layout_height="100dip">
+
+                <ImageButton
+                    android:id="@+id/btnWeb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/web"
+                    android:background="#fff"
+                    android:onClick="btnWeb"
+                    android:layout_marginTop="-10dip"
+                    android:padding="40dp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="500dip"
+                android:layout_height="100dip">
+
+                <ImageButton
+                    android:id="@+id/btnPreven"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/prevencion"
+                    android:background="#fff"
+                    android:onClick="btnPreven"
+                    android:layout_marginTop="-10dip"
+                    android:padding="40dp"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="500dip"
+                android:layout_height="100dip">
+
+                <ImageButton
+                    android:id="@+id/btnYoutube"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/youtube"
+                    android:layout_marginTop="-10dip"
+                    android:padding="40dp"
+                    android:background="#fff"
+                    android:onClick="btnYoutube"/>
+            </TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Si quieres denunciar la venta de alcohol, tabaco y otras drogas a adolecentes da click aqui:"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_margin="10dp"/>
+            <TableRow
+                android:layout_width="500dip"
+                android:layout_height="100dip"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/btnLlamar"
+                    android:text="1800-335486 (Delito)"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="23dip"
+                    android:textStyle="bold"
+                    android:padding="10dip"
+                    android:textColor="#000"
+                    android:background="@drawable/bordebtn"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</FrameLayout>

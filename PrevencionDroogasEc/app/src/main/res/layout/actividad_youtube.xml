@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Actividad_Youtube">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#0000FF">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="1dip"
+                android:layout_marginLeft="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btnback"
+                android:onClick="btnBack1"
+                android:adjustViewBounds="true"
+                android:background="#0000FF"/>
+
+            <ImageButton
+                android:id="@+id/btnHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="1dip"
+                android:layout_marginLeft="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btnhome"
+                android:onClick="btnBack1"
+                android:adjustViewBounds="true"
+                android:background="#0000FF"/>
+
+            <TextView
+                android:text="Videos Informativos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView17"
+                android:textSize="19dip"
+                android:textStyle="bold"
+                android:paddingTop="20dip"
+                android:paddingBottom="20dip"
+                android:layout_marginLeft="10dip"
+                android:paddingRight="10dip"
+                android:textColor="#fff"/>
+        </TableRow>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

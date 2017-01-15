@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:state_empty="true" android:drawable="@drawable/ico_abajo">
+    </item>
+    <item android:state_expanded="true" android:drawable="@drawable/ico_arriba">
+    </item>
+    <item android:drawable="@drawable/ico_abajo">
+    </item>
+</selector>

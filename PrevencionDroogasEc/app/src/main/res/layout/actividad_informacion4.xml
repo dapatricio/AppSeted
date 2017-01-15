@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/actividad_informacion4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.seted.prevencionec.ui.ActividadInformacion4">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="Heroína"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView4"
+            android:textSize="30dip"
+            android:textStyle="bold"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:textColor="#000"
+            android:background="#edd602"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginBottom="15dip">
+
+                <TextView
+                    android:text="Efectos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:textSize="24dip"
+                    android:textStyle="bold"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:text="@string/txtEfectos4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6"
+                    android:textSize="14dip"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:textColor="#000"
+                    android:paddingRight="1dip"/>
+                <TextView
+                    android:text="Riesgos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView7"
+                    android:textSize="20dip"
+                    android:textStyle="bold"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:textColor="#000"
+                    android:paddingRight="1dip"/>
+
+                <TextView
+                    android:text="@string/txtRiesgos4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:textSize="14dip"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:textColor="#000"
+                    android:paddingRight="1dip"/>
+
+                <TextView
+                    android:text="Síndrome de Abstinencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9"
+                    android:textSize="24dip"
+                    android:textStyle="bold"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:textColor="#000"
+                    android:paddingRight="1dip"/>
+
+                <TextView
+                    android:text="@string/txtAbstinencia4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10"
+                    android:textSize="14dip"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:textColor="#000"
+                    android:paddingRight="1dip"/>
+
+                <TextView
+                    android:text="Dependencia y Tolerancia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:textSize="24dip"
+                    android:textStyle="bold"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:textColor="#000"
+                    android:paddingRight="1dip"/>
+
+                <TextView
+                    android:text="@string/txtDependencia4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:textSize="14dip"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:textColor="#000"
+                    android:paddingRight="1dip"/>
+
+                <TextView
+                    android:text="Intoxicación"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:textSize="24dip"
+                    android:textStyle="bold"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:textColor="#000"
+                    android:paddingRight="1dip"/>
+
+                <TextView
+                    android:text="@string/txtIntoxicacion4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:textSize="14dip"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="20dip"
+                    android:textColor="#000"
+                    android:paddingRight="1dip"/>
+
+                <Button
+                    android:layout_marginTop="30dip"
+                    android:text="Volver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnVolver"
+                    android:gravity="center"
+                    android:paddingBottom="10dip"
+                    android:background="@drawable/bordebtn"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

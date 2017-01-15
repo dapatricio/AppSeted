@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/actividad_informacion3"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="20dp"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.seted.prevencionec.ui.ActividadInfo10">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="SOBRE EL CONSUMO DE DROGAS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView4"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:textColor="#000"
+            android:background="#edd602"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dip">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginBottom="15dip">
+
+                <TextView
+                    android:text="@string/consumoDrogas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:textSize="16dip"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:textColor="#000"/>
+
+                <Button
+                    android:layout_marginTop="30dip"
+                    android:text="Volver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnVolver"
+                    android:gravity="center"
+                    android:paddingBottom="10dip"
+                    android:background="@drawable/bordebtn"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

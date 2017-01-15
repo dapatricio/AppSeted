@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "725243605137",
+    "firebase_url": "https://chatseted.firebaseio.com",
+    "project_id": "chatseted",
+    "storage_bucket": "chatseted.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725243605137:android:adcbf601cabfc593",
+        "android_client_info": {
+          "package_name": "com.seted.prevencionec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "725243605137-lho9mconitf6tb1p7vo0am8vm4glg7r6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUUxXah88YzFZ-a6e0fOUUOM_MXvRd4Io"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

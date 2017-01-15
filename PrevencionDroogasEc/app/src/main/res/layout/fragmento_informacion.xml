@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TableRow
+                    android:layout_width="500dip"
+                    android:layout_height="100dip">
+
+                    <ImageButton
+                        android:id="@+id/btnImg1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/coca1"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="15dip"
+                        android:layout_marginBottom="15dip"
+                        android:background="#fff"
+                        android:onClick="btn1"/>
+
+                    <ImageButton
+                        android:id="@+id/btnImg2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/canabis1"
+                        android:layout_margin="15dip"
+                        android:background="#fff"
+                        android:onClick="btn2"/>
+                    <ImageButton
+                        android:id="@+id/btnImg3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pasta1"
+                        android:layout_margin="15dip"
+                        android:background="#fff"
+                        android:onClick="btn3"/>
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip">
+
+
+
+                    <ImageButton
+                        android:id="@+id/btnImg4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/heroina1"
+                        android:layout_margin="15dip"
+                        android:background="#fff"
+                        android:onClick="btn4"/>
+
+                    <ImageButton
+                        android:id="@+id/btnImg5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/extasis1"
+                        android:layout_margin="15dip"
+                        android:background="#fff"
+                        android:onClick="btn5"/>
+
+                    <ImageButton
+                        android:id="@+id/btnImg6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/crack1"
+                        android:layout_margin="15dip"
+                        android:background="#fff"
+                        android:onClick="btn6"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip">
+
+                    <ImageButton
+                        android:id="@+id/btnImg7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/benso1"
+                        android:layout_margin="15dip"
+                        android:background="#fff"
+                        android:onClick="btn7"/>
+
+                    <ImageButton
+                        android:id="@+id/btnImg8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/tabaco1"
+                        android:layout_margin="15dip"
+                        android:background="#fff"
+                        android:onClick="btn8"/>
+
+                    <ImageButton
+                        android:id="@+id/btnImg9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/alcohol1"
+                        android:layout_margin="15dip"
+                        android:background="#fff"
+                        android:onClick="btn9"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip">
+
+                    <ImageButton
+                        android:id="@+id/btnImg10"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/que1"
+                        android:layout_margin="15dip"
+                        android:background="#fff"
+                        android:onClick="btn10"/>
+
+                </TableRow>
+
+
+            </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

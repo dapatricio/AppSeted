@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_inicio"
+            android:checked="true"
+            android:icon="@drawable/ico_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/item_informacion"
+            android:icon="@drawable/ico_informacion"
+            android:title="Información" />
+        <item
+            android:id="@+id/item_Videos"
+            android:icon="@drawable/ico_video"
+            android:title="Videos" />
+        <item
+            android:id="@+id/item_redes"
+            android:icon="@drawable/ico_redes"
+            android:title="Redes Sociales" />
+        <item
+            android:id="@+id/item_centros"
+            android:icon="@drawable/ico_ubicacion"
+            android:title="Centros de Salud" />
+        <item
+            android:id="@+id/item_chat"
+            android:icon="@drawable/ico_chat"
+            android:title="Chat en linea" />
+    </group>
+
+</menu>

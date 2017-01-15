@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#ffffff</color>
+
+    <color name="primaryDarkColor">#1C1C1C</color>
+    <color name="primaryColor">#0000FF</color>
+    <color name="accentColor">#ff000d</color>
+
+    <color name="background_footer_item_grid_categorias">#90000000</color>
+
+    <color name="color_light">#ffffff</color>
+
+    <color name="background_header_seccion_inicio">#1C1C1C</color>
+</resources>
