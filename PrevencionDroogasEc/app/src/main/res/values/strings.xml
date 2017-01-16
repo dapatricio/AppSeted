@@ -236,4 +236,34 @@ direccionamiento de la política pública sobre drogas.
         <item>Daule</item>
         <item>Playas</item>
     </string-array>
+
+    <string name="action_sign_in_short">Registrar</string>
+    <string name="email">Alias</string>
+    <string name="minimum_password">Clave muy corta, ingresa almenos 6 caracteres!</string>
+    <string name="auth_failed">Autentificacion fallida, revisa el alias y clave o registrate</string>
+    <string name="change_email">Cambiar alias</string>
+    <string name="change_password">Cambiar clave</string>
+    <string name="send_password_reset_email">Restablecer tu clave por correo</string>
+    <string name="remove_user">Eliminar Cuenta</string>
+    <string name="new_pass">Nueva clave</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Ingresar</string>
+    <string name="hint_email">Alias</string>
+    <string name="hint_password">Clave</string>
+    <string name="hint_name">Alias</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="btn_link_to_register">No estas registrado? Registrate ahora, es gratis!</string>
+    <string name="btn_link_to_login">Ya estas registrado?, Logueate!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Olvidaste tu clave?</string>
+    <string name="btn_reset_password">Restablece tu clave</string>
+    <string name="btn_back"><![CDATA[<< Atras]]></string>
+    <string name="hint_new_email">Nuevo alias</string>
+    <string name="btn_change">Cambiar</string>
+    <string name="btn_send">Enviar</string>
+    <string name="btn_remove">Eliminar</string>
+    <string name="btn_sign_out">Salir</string>
+    <string name="lbl_forgot_password">Olvidaste tu clave?</string>
+    <string name="forgot_password_msg">Solo necesitamos un Email registrado, y te enviaremos las instrucciones para restablecer tu clave.</string>
+    <string name="prompt_password">Escribe aqui...</string>
 </resources>

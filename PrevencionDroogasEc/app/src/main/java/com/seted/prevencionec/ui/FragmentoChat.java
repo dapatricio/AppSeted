@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.seted.prevencionec.R;
@@ -28,6 +29,7 @@ public class FragmentoChat extends android.support.v4.app.Fragment {
     private RadioButton rad, rad1,rad2, rad4;
     private String usuario;
     private Intent chat ;
+    private TextView descrip;
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -40,7 +42,6 @@ public class FragmentoChat extends android.support.v4.app.Fragment {
         rad2 = (RadioButton)rootView.findViewById(R.id.radio2);
         rad4 = (RadioButton)rootView.findViewById(R.id.radio4);
         texto = (EditText)rootView.findViewById(R.id.descrip);
-
 
         btnLlamar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,39 +76,43 @@ public class FragmentoChat extends android.support.v4.app.Fragment {
         btnSelec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Dialogo
-                AlertDialog.Builder nombre = new AlertDialog.Builder(getContext());
-                nombre.setTitle("Escriba un alias: ");
-
-                final EditText input_field = new EditText(getContext());
-                nombre.setView(input_field);
-                nombre.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        usuario = input_field.getText().toString();
-                        Intent info = new Intent("com.seted.prevencionec.ui.Chat_Room");
-                        Bundle b = new Bundle();
-                        b.putString("nombre", usuario);
-                        info.putExtras(b);
-                        startActivity(info);
-                    }
-                });
-                nombre.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
-
-                AlertDialog dialog = nombre.create();
-                dialog.show();
-                //fin dialogo
 
                 if (rad.isChecked() == true) {
                     String texto1 = (String) rad.getText();
                     Toast toast = Toast.makeText(getContext(), texto1, Toast.LENGTH_LONG);
+                    Intent info = new Intent("com.seted.prevencionec.ui.LoginActivity");
+                    startActivity(info);
                     toast.show();
                 }
+                else {
+                    //Dialogo
+                    AlertDialog.Builder nombre = new AlertDialog.Builder(getContext());
+                    nombre.setTitle("Escriba un alias: ");
+                    nombre.setMessage("'Alias' es un nombre ficticio que puedes utilizar en nuestro chat");
+
+                    final EditText input_field = new EditText(getContext());
+                    nombre.setView(input_field);
+                    nombre.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            usuario = input_field.getText().toString();
+                            Intent info = new Intent("com.seted.prevencionec.ui.Chat_Room");
+                            Bundle b = new Bundle();
+                            b.putString("nombre", usuario);
+                            info.putExtras(b);
+                            startActivity(info);
+                        }
+                    });
+                    nombre.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+
+                    AlertDialog dialog = nombre.create();
+                    dialog.show();
+                    //fin dialogo
                 if (rad1.isChecked() == true) {
                     String texto2 = (String) rad1.getText();
                     Toast toast = Toast.makeText(getContext(), texto2, Toast.LENGTH_LONG);
@@ -123,13 +128,13 @@ public class FragmentoChat extends android.support.v4.app.Fragment {
                     Toast toast = Toast.makeText(getContext(), txt, Toast.LENGTH_LONG);
                     toast.show();
                 }
-
+            }
 
             }
         });
 
 
-        final AlertDialog.Builder dialogo = new AlertDialog.Builder(getContext());
+        /*final AlertDialog.Builder dialogo = new AlertDialog.Builder(getContext());
         dialogo.setMessage("Disculpa las molestias, seguimos trabajando en el Chat en Línea");
         dialogo.setTitle("En construcción");
         dialogo.setPositiveButton("Ok",new DialogInterface.OnClickListener() {
@@ -139,7 +144,7 @@ public class FragmentoChat extends android.support.v4.app.Fragment {
             }
         });
         AlertDialog dialogChat = dialogo.create();
-        dialogChat.show();
+        dialogChat.show();*/
 
 
 

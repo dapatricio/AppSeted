@@ -154,12 +154,59 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.Principal">
+            <intent-filter>
+                <action android:name="com.seted.prevencionec.ui.Principal" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.SignupActivity">
+            <intent-filter>
+                <action android:name="com.seted.prevencionec.ui.SignupActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.LoginActivity">
+            <intent-filter>
+                <action android:name="com.seted.prevencionec.ui.LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.ResetPasswordActivity">
+            <intent-filter>
+                <action android:name="com.seted.prevencionec.ui.ResetPasswordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Chat_RoomPrivado">
+            <intent-filter>
+                <action android:name="com.seted.prevencionec.ui.Chat_RoomPrivado" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Chat_RoomSETED">
+            <intent-filter>
+                <action android:name="com.seted.prevencionec.ui.Chat_RoomSETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.ListaChats">
+            <intent-filter>
+                <action android:name="com.seted.prevencionec.ui.ListaChats" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBUXpnZeyBsxjUVK_-eErlSABOIpNXgqrE" />
-
-
     </application>
 
 </manifest>

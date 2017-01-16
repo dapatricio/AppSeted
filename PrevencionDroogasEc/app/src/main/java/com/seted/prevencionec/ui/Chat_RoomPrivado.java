@@ -5,11 +5,9 @@
 
 package com.seted.prevencionec.ui;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -32,7 +30,7 @@ import java.util.Map;
  * Created by dapat on 14/1/2017.
  */
 
-public class Chat_Room extends AppCompatActivity {
+public class Chat_RoomPrivado extends AppCompatActivity {
 
     private String user_name, room_name;
     private String chat_msg, chat_user_name;
@@ -46,17 +44,16 @@ public class Chat_Room extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chat_room);
+        setContentView(R.layout.chat_roomprivado);
 
         Bundle b = getIntent().getExtras();
-        user_name = b.getString("nombre");
+         user_name = b.getString("nombreChat");
 
         textoEscrito = (TextView)findViewById(R.id.textoEscri);
         btnEnvio = (Button)findViewById(R.id.btnsend);
         txtChat =(EditText)findViewById(R.id.txtChat);
 
-        setTitle("Sala SETED");
-        room_name= "SETED";
+        room_name = user_name;
 
         root = FirebaseDatabase.getInstance().getReference().child(room_name);
         btnEnvio.setOnClickListener(new View.OnClickListener() {
@@ -104,7 +101,7 @@ public class Chat_Room extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
+            });
 
         ImageButton btn = (ImageButton)findViewById(R.id.btnHome);
         btn.setOnClickListener(new View.OnClickListener() {
