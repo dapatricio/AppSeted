@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:background="#0000FF">
+        android:background="@color/primaryColor">
 
         <TableRow
             android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
                 android:src="@drawable/btnback"
                 android:onClick="btnBack1"
                 android:adjustViewBounds="true"
-                android:background="#0000FF"/>
+                android:background="@color/primaryColor"/>
 
             <ImageButton
                 android:id="@+id/btnHome"
@@ -41,7 +41,7 @@
                 android:src="@drawable/btnhome"
                 android:onClick="btnBack1"
                 android:adjustViewBounds="true"
-                android:background="#0000FF"/>
+                android:background="@color/primaryColor"/>
 
             <TextView
                 android:text="Videos Informativos"

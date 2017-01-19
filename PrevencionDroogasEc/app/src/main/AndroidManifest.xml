@@ -175,13 +175,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ResetPasswordActivity">
-            <intent-filter>
-                <action android:name="com.seted.prevencionec.ui.ResetPasswordActivity" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity android:name=".ui.Chat_RoomPrivado">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.Chat_RoomPrivado" />

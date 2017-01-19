@@ -37,7 +37,7 @@ public class Chat_RoomSETED extends AppCompatActivity {
     private String temp_key;
 
     private TextView textoEscrito;
-    private Button btnEnvio;
+    private ImageButton btnEnvio;
     private EditText txtChat;
 
     @Override
@@ -50,7 +50,7 @@ public class Chat_RoomSETED extends AppCompatActivity {
         user_name = b.getString("usuario");
 
         textoEscrito = (TextView)findViewById(R.id.textoEscri);
-        btnEnvio = (Button)findViewById(R.id.btnsend);
+        btnEnvio = (ImageButton)findViewById(R.id.btnsend);
         txtChat =(EditText)findViewById(R.id.txtChat);
 
         root = FirebaseDatabase.getInstance().getReference().child(room_name);

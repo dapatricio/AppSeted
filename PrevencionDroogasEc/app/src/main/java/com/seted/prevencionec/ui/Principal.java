@@ -28,7 +28,9 @@ public class Principal extends AppCompatActivity {
     private FirebaseAuth auth;
     private TextView vistaUser;
 
+    private String user_name;
 
+    private Bundle c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +50,9 @@ public class Principal extends AppCompatActivity {
                 if (user == null) {
                     // user auth state is changed - user is null
                     // launch login activity
-                    startActivity(new Intent(Principal.this, LoginActivity.class));
-                    finish();
+                    Intent info = new Intent("com.seted.prevencionec.ui.LoginActivity");
+                    startActivity(info);
+                    auth.signOut();
                 }
             }
         };
@@ -79,9 +82,9 @@ public class Principal extends AppCompatActivity {
         //sendEmail.setVisibility(View.GONE);
         remove.setVisibility(View.GONE);
 
-        Bundle c = getIntent().getExtras();
-        String user_name = c.getString("nombre");
-        vistaUser.setText("Usuario: "+user_name);
+        c = getIntent().getExtras();
+        user_name = c.getString("nombre");
+        vistaUser.setText("Usuario ingresado: "+ user_name);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
         if (progressBar != null) {
@@ -93,8 +96,9 @@ public class Principal extends AppCompatActivity {
             public void onClick(View v) {
                 Intent info = new Intent("com.seted.prevencionec.ui.Chat_RoomPrivado");
                 Bundle b = new Bundle();
-                String room = vistaUser.getText().toString();
+                String room = "Usuario "+user_name+":";
                 b.putString("nombreChat", room);
+                b.putString("nombrePer", user_name);
                 info.putExtras(b);
                 startActivity(info);
             }
@@ -185,45 +189,6 @@ public class Principal extends AppCompatActivity {
             }
         });
 
-        /*btnSendResetEmail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                oldEmail.setVisibility(View.VISIBLE);
-                newEmail.setVisibility(View.GONE);
-                password.setVisibility(View.GONE);
-                newPassword.setVisibility(View.GONE);
-                changeEmail.setVisibility(View.GONE);
-                changePassword.setVisibility(View.GONE);
-                sendEmail.setVisibility(View.VISIBLE);
-                remove.setVisibility(View.GONE);
-            }
-        });
-
-        sendEmail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                progressBar.setVisibility(View.VISIBLE);
-                if (!oldEmail.getText().toString().trim().equals("")) {
-                    auth.sendPasswordResetEmail(oldEmail.getText().toString().trim())
-                            .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    if (task.isSuccessful()) {
-                                        Toast.makeText(Principal.this, "Restablecimiento de clave enviada al correo!", Toast.LENGTH_SHORT).show();
-                                        progressBar.setVisibility(View.GONE);
-                                    } else {
-                                        Toast.makeText(Principal.this, "Fallo el envio de email!", Toast.LENGTH_SHORT).show();
-                                        progressBar.setVisibility(View.GONE);
-                                    }
-                                }
-                            });
-                } else {
-                    oldEmail.setError("Ingresa un email");
-                    progressBar.setVisibility(View.GONE);
-                }
-            }
-        });*/
-
         btnRemoveUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -235,7 +200,8 @@ public class Principal extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(Principal.this, "Tu cuenta ha sido eliminada :( Crea una cuenta ahora!", Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(Principal.this, SignupActivity.class));
+                                        Intent intent = new Intent("com.seted.prevencionec.ui.LoginActivitySignupActivity");
+                                        startActivity(intent);
                                         finish();
                                         progressBar.setVisibility(View.GONE);
                                     } else {

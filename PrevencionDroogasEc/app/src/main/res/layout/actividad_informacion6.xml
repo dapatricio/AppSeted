@@ -30,7 +30,7 @@
             android:paddingBottom="10dip"
             android:paddingLeft="15dip"
             android:textColor="#000"
-            android:background="#edd602"/>
+            android:background="#eab600"/>
     </LinearLayout>
 
     <ScrollView

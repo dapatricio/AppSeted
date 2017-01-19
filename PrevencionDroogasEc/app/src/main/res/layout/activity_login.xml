@@ -15,7 +15,7 @@
     <TableRow
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#0000FF"
+        android:background="@color/primaryColor"
         android:padding="5dp"
         android:id="@+id/tableRow">
 
@@ -28,7 +28,7 @@
             android:scaleType="fitCenter"
             android:src="@drawable/btnhome"
             android:adjustViewBounds="true"
-            android:background="#0000FF"
+            android:background="@color/primaryColor"
             android:layout_marginTop="5dp" />
 
         <TextView
@@ -71,7 +71,7 @@
                 android:hint="@string/hint_email"
                 android:inputType="textEmailAddress"
                 android:textColor="#1C1C1C"
-                android:textColorHint="#0000FF"/>
+                android:textColorHint="@color/primaryColor"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -86,7 +86,7 @@
                 android:hint="@string/hint_password"
                 android:inputType="textPassword"
                 android:textColor="#1C1C1C"
-                android:textColorHint="#0000FF" />
+                android:textColorHint="@color/primaryColor" />
         </android.support.design.widget.TextInputLayout>
 
         <!-- Login Button -->

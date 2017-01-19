@@ -40,7 +40,7 @@ public class Chat_Room extends AppCompatActivity {
     private String temp_key;
 
     private TextView textoEscrito;
-    private Button btnEnvio;
+    private ImageButton btnEnvio;
     private EditText txtChat;
 
     @Override
@@ -52,13 +52,25 @@ public class Chat_Room extends AppCompatActivity {
         user_name = b.getString("nombre");
 
         textoEscrito = (TextView)findViewById(R.id.textoEscri);
-        btnEnvio = (Button)findViewById(R.id.btnsend);
+        btnEnvio = (ImageButton)findViewById(R.id.btnsend);
         txtChat =(EditText)findViewById(R.id.txtChat);
 
         setTitle("Sala SETED");
         room_name= "SETED";
 
         root = FirebaseDatabase.getInstance().getReference().child(room_name);
+
+        /*Map<String,Object> map = new HashMap<String, Object>();
+        temp_key = root.push().getKey();
+        root.updateChildren(map);
+
+        DatabaseReference message_root = root.child(temp_key);
+        Map<String,Object> map2 = new HashMap<String, Object>();
+        map2.put("name", "Secretaria Tecnica de Drogas");
+        map2.put("msg", "\nHola "+user_name+".\nBienvenido a nuestro Chat en Linea.");
+
+        message_root.updateChildren(map2);*/
+
         btnEnvio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -37,19 +37,19 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private Button btnSignup, btnLogin, btnReset;
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference().getRoot();
-    private String user_name;
+    private String user_name, chat_room;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //Get Firebase auth instance
+        /*Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser() != null) {
             startActivity(new Intent(LoginActivity.this, Principal.class));
             finish();
-        }
+        }*/
 
         // set the view now
         setContentView(R.layout.activity_login);
@@ -96,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = inputEmail.getText().toString();
+                String email = inputEmail.getText().toString().toLowerCase();
                 final String password = inputPassword.getText().toString();
 
                 if (TextUtils.isEmpty(email)) {
@@ -129,16 +129,14 @@ public class LoginActivity extends AppCompatActivity {
                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
+                                    chat_room = "chat"+inputEmail.getText().toString().toLowerCase();
                                     if(user_name.equals("seted")){
                                         Intent info1 = new Intent("com.seted.prevencionec.ui.ListaChats");
                                         Bundle c = new Bundle();
                                         c.putString("nombre", user_name);
                                         info1.putExtras(c);
                                         startActivity(info1);
-                                        String chat_room = "chat"+(inputEmail.getText().toString());
-                                        Map<String, Object> map = new HashMap<String, Object>();
-                                        map.put(inputEmail.getText().toString(),"");
-                                        root.updateChildren(map);
+
 
                                         finish();
                                     }else{
@@ -149,11 +147,6 @@ public class LoginActivity extends AppCompatActivity {
                                         info1.putExtras(c);
                                         startActivity(info1);
 
-                                        String chat_room = "chat" + (inputEmail.getText().toString());
-
-                                        Map<String, Object> map = new HashMap<String, Object>();
-                                        map.put(inputEmail.getText().toString(), "");
-                                        root.updateChildren(map);
 
                                         finish();
                                     }

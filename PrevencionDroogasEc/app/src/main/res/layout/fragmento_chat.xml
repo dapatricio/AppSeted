@@ -88,7 +88,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/btnChat"
                         android:padding="15dip"
-                        android:background="#f50602ed"
+                        android:background="@color/primaryColor"
                         android:textColor="#ffffff"
                         android:textStyle="bold"
                         android:textSize="15dp"

@@ -34,7 +34,7 @@ public class SignupActivity extends AppCompatActivity {
     private Button btnSignIn, btnSignUp, btnResetPassword;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
-    private String user_name;
+    private String user_name, chat_room;
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference().getRoot();
 
     @Override
@@ -72,7 +72,7 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String email = (inputEmail.getText().toString().trim()+"@gmail.com");
+                String email = (inputEmail.getText().toString().toLowerCase().trim()+"@gmail.com");
                 String password = inputPassword.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)) {
@@ -97,6 +97,7 @@ public class SignupActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 progressBar.setVisibility(View.GONE);
+                                chat_room = "Usuario "+inputEmail.getText().toString().toLowerCase();
                                 // If sign in fails, display a message to the user. If sign in succeeds
                                 // the auth state listener will be notified and logic to handle the
                                 // signed in user can be handled in the listener.
@@ -110,12 +111,6 @@ public class SignupActivity extends AppCompatActivity {
                                     c.putString("nombre", user_name);
                                     info1.putExtras(c);
                                     startActivity(info1);
-
-                                    String chat_room = "chat"+(inputEmail.getText().toString());
-
-                                    Map<String, Object> map = new HashMap<String, Object>();
-                                    map.put(inputEmail.getText().toString(),"");
-                                    root.updateChildren(map);
 
                                     finish();
 

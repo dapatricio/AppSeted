@@ -32,13 +32,13 @@ import java.util.Map;
 
 public class Chat_RoomPrivado extends AppCompatActivity {
 
-    private String user_name, room_name;
+    private String user_name, room_name, usuario;
     private String chat_msg, chat_user_name;
     private DatabaseReference root;
     private String temp_key;
 
     private TextView textoEscrito;
-    private Button btnEnvio;
+    private ImageButton btnEnvio;
     private EditText txtChat;
 
     @Override
@@ -47,15 +47,28 @@ public class Chat_RoomPrivado extends AppCompatActivity {
         setContentView(R.layout.chat_roomprivado);
 
         Bundle b = getIntent().getExtras();
-         user_name = b.getString("nombreChat");
+        user_name = b.getString("nombreChat");
+        usuario = b.getString("nombrePer");
 
         textoEscrito = (TextView)findViewById(R.id.textoEscri);
-        btnEnvio = (Button)findViewById(R.id.btnsend);
+        btnEnvio = (ImageButton)findViewById(R.id.btnsend);
         txtChat =(EditText)findViewById(R.id.txtChat);
 
         room_name = user_name;
 
         root = FirebaseDatabase.getInstance().getReference().child(room_name);
+
+        Map<String,Object> map = new HashMap<String, Object>();
+        temp_key = root.push().getKey();
+        root.updateChildren(map);
+
+        DatabaseReference message_root = root.child(temp_key);
+        Map<String,Object> map2 = new HashMap<String, Object>();
+        map2.put("name", "Secretaria Técnica de Drogas");
+        map2.put("msg", "\nHola "+usuario+".\nBienvenido a nuestro Chat en Linea.");
+
+        message_root.updateChildren(map2);
+
         btnEnvio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

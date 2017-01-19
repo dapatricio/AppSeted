@@ -8,7 +8,7 @@
     android:paddingBottom="20dp"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.SETED.PrevencionDrogasEc.ui.ActividadInformacion8">
+    tools:context="com.seted.prevencionec.ui.ActividadInformacion8">
 
 
     <LinearLayout
@@ -30,7 +30,7 @@
             android:paddingBottom="10dip"
             android:paddingLeft="15dip"
             android:textColor="#000"
-            android:background="#edd602"/>
+            android:background="#eab600"/>
     </LinearLayout>
 
     <ScrollView
