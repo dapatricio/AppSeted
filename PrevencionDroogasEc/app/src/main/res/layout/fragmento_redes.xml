@@ -179,7 +179,7 @@ android:layout_height="match_parent">
 
                 <Button
                     android:id="@+id/btnLlamar"
-                    android:text="1800-335486 (Delito)"
+                    android:text="1800-332433 (DECIDE)"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
                     android:textSize="23dip"

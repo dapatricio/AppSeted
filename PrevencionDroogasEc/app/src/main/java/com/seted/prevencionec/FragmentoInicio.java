@@ -5,7 +5,11 @@
 
 package com.seted.prevencionec;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,32 +17,35 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageButton;
 import android.webkit.WebSettings;
+import android.widget.ProgressBar;
 
 
 public class FragmentoInicio extends android.support.v4.app.Fragment  {
     View rootView;
     WebView myWebView;
+    private String url;
+    private ProgressBar progressBar;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragmento_inicio, container, false);
-        //url="https://twitter.com/prevendrogas_ec";
-
+        url="https://twitter.com/prevendrogas_ec";
+        progressBar = (ProgressBar)rootView.findViewById(R.id.progressBar);
         myWebView = (WebView) rootView.findViewById(R.id.vistaWeb);
-        myWebView.setWebViewClient(new WebViewClient());
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-        myWebView.loadUrl("https://twitter.com/prevendrogas_ec");
+        myWebView.loadUrl(url);
 
-        ImageButton btnRec = (ImageButton)rootView.findViewById(R.id.btnRecarg);
-        btnRec.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myWebView = (WebView) rootView.findViewById(R.id.vistaWeb);
-                myWebView.setWebViewClient(new WebViewClient());
-                myWebView.loadUrl("https://twitter.com/prevendrogas_ec");
+        progressBar.setVisibility(View.VISIBLE);
+        progressBar.getIndeterminateDrawable().setColorFilter(Color.RED, PorterDuff.Mode.MULTIPLY);
+        myWebView.setWebViewClient(new WebViewClient() {
+
+            public void onPageFinished(WebView view, String url) {
+                progressBar.setVisibility(View.GONE);
             }
         });
-        return rootView;
+
+
+    return rootView;
 
     }
 

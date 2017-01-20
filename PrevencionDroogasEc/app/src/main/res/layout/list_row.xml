@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Daniel Peñarreta.
+  ~ Copyright (c) 2016.  All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:background="@drawable/borde">
+
+    <!--  listrow  -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:orientation="horizontal"
+        android:layout_margin="5dip">
+
+        <ImageView
+            android:id="@+id/list_row_image"
+            android:layout_width="50dip"
+            android:layout_height="75dip"
+            android:src="@drawable/hospital"/>
+    <!-- titulo de la categoria -->
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_margin="5dip">
+        <TextView
+            android:id="@+id/list_row_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:textSize="20dip"
+            android:layout_toRightOf="@+id/thumbnail"/>
+        <TextView
+            android:id="@+id/list_row_subtitleCant"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtitle 1"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="18dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/thumbnail" />
+        <TextView
+            android:id="@+id/list_row_subtitleTel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtitle 2"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="18dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/thumbnail" />
+    </TableLayout>
+        <ImageView
+            android:id="@+id/list_row_imageIr"
+            android:layout_width="50dip"
+            android:layout_height="75dip"
+            android:src="@drawable/ico_ir"
+            android:layout_marginRight="5dip"/>
+    </LinearLayout>
+
+</RelativeLayout>

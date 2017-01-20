@@ -109,7 +109,7 @@ public class FragmentoRedes extends android.support.v4.app.Fragment {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         try{
-                            startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:1800335486")));
+                            startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:1800332433")));
                         }catch(Exception e){
                             e.printStackTrace();
                         }

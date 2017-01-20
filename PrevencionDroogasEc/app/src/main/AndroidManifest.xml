@@ -19,7 +19,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.SETED">
-        <activity android:name=".ui.PantallaDeInicio1">
+        <activity android:name=".ui.PantallaDeInicio1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,77 +46,88 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.seted.prevencionec.ui.ActividadPrincipal" />
         </activity>
-        <activity android:name=".ui.ActividadInformacion1">
+        <activity android:name=".ui.ActividadInformacion1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ActividadInformacion1" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ActividadInformacion2">
+        <activity android:name=".ui.ActividadInformacion2"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ActividadInformacion2" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ActividadInformacion3">
+        <activity android:name=".ui.ActividadInformacion3"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ActividadInformacion3" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ActividadInformacion4">
+        <activity android:name=".ui.ActividadInformacion4"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ActividadInformacion4" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ActividadInformacion5">
+        <activity android:name=".ui.ActividadInformacion5"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ActividadInformacion5" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ActividadInformacion6">
+        <activity android:name=".ui.ActividadInformacion6"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ActividadInformacion6" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ActividadInformacion7">
+        <activity android:name=".ui.ActividadInformacion7"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ActividadInformacion7" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ActividadInformacion8">
+        <activity android:name=".ui.ActividadInformacion8"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ActividadInformacion8" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ActividadInformacion9">
+        <activity android:name=".ui.ActividadInformacion9"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ActividadInformacion9" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ActividadInfo10">
+        <activity android:name=".ui.ActividadInfo10"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ActividadInfo10" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.Actividad_lista">
+        <activity android:name=".ui.Actividad_lista"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ActividadLista" />
 
@@ -123,7 +136,8 @@
         </activity>
         <activity
             android:name=".ui.MapaGoogle"
-            android:label="@string/title_activity_mapa_google">
+            android:label="@string/title_activity_mapa_google"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.MapaGoogle" />
 
@@ -140,56 +154,64 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.Act_chat">
+        <activity android:name=".ui.Act_chat"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.Act_chat" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.Chat_Room">
+        <activity android:name=".ui.Chat_Room"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.Chat_Room" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.Principal">
+        <activity android:name=".ui.Principal"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.Principal" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.SignupActivity">
+        <activity android:name=".ui.SignupActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.SignupActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.LoginActivity">
+        <activity android:name=".ui.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.LoginActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.Chat_RoomPrivado">
+        <activity android:name=".ui.Chat_RoomPrivado"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.Chat_RoomPrivado" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.Chat_RoomSETED">
+        <activity android:name=".ui.Chat_RoomSETED"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.Chat_RoomSETED" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ListaChats">
+        <activity android:name=".ui.ListaChats"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="com.seted.prevencionec.ui.ListaChats" />
 

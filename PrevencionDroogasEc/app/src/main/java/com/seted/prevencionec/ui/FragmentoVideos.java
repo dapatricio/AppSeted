@@ -19,7 +19,7 @@ import com.seted.prevencionec.R;
 
 public class FragmentoVideos extends android.support.v4.app.Fragment implements YouTubePlayer.OnInitializedListener {
     View rootView;
-    LinearLayout vid1, vid2, vid3, vid4 ;
+    LinearLayout vid1, vid2, vid3, vid4, vid5, vid6, vid7, vid8 ;
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -29,6 +29,10 @@ public class FragmentoVideos extends android.support.v4.app.Fragment implements 
         vid2 = (LinearLayout)rootView.findViewById(R.id.btnVd1);
         vid3 = (LinearLayout)rootView.findViewById(R.id.btnVd2);
         vid4 = (LinearLayout)rootView.findViewById(R.id.btnVd3);
+        vid5 = (LinearLayout)rootView.findViewById(R.id.btnVd5);
+        vid6 = (LinearLayout)rootView.findViewById(R.id.btnVd6);
+        vid7= (LinearLayout)rootView.findViewById(R.id.btnVd7);
+        vid8 = (LinearLayout)rootView.findViewById(R.id.btnVd8);
 
         vid1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +75,54 @@ public class FragmentoVideos extends android.support.v4.app.Fragment implements 
             public void onClick(View v) {
 
                 String url = "75EdS2wzxCw";
+                Intent info = new Intent("com.seted.prevencionec.ui.Actividad_Youtube");
+                Bundle b = new Bundle();
+                b.putString("url", url);
+                info.putExtras(b);
+                startActivity(info);
+            }
+        });
+        vid5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String url = "0AdCz7gTXBw";
+                Intent info = new Intent("com.seted.prevencionec.ui.Actividad_Youtube");
+                Bundle b = new Bundle();
+                b.putString("url", url);
+                info.putExtras(b);
+                startActivity(info);
+            }
+        });
+        vid6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String url = "vD0Gu232kpM";
+                Intent info = new Intent("com.seted.prevencionec.ui.Actividad_Youtube");
+                Bundle b = new Bundle();
+                b.putString("url", url);
+                info.putExtras(b);
+                startActivity(info);
+            }
+        });
+        vid7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String url = "uO4rMV80UPI";
+                Intent info = new Intent("com.seted.prevencionec.ui.Actividad_Youtube");
+                Bundle b = new Bundle();
+                b.putString("url", url);
+                info.putExtras(b);
+                startActivity(info);
+            }
+        });
+        vid8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String url = "HgmT7ca8SaI";
                 Intent info = new Intent("com.seted.prevencionec.ui.Actividad_Youtube");
                 Bundle b = new Bundle();
                 b.putString("url", url);

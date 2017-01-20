@@ -14,6 +14,24 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip">
+
+                    <ImageButton
+                        android:id="@+id/btnImg10"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/que1"
+                        android:layout_margin="15dip"
+                        android:background="#fff"
+                        android:onClick="btn10"/>
+
+                </TableRow>
 
                 <TableRow
                     android:layout_width="500dip"
@@ -154,27 +172,6 @@
                         android:onClick="btn9"/>
 
                 </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="100dip">
-
-                    <ImageButton
-                        android:id="@+id/btnImg10"
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:padding="3dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/que1"
-                        android:layout_margin="15dip"
-                        android:background="#fff"
-                        android:onClick="btn10"/>
-
-                </TableRow>
-
-
             </TableLayout>
     </ScrollView>
 

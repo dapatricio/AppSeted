@@ -106,7 +106,7 @@
 
                     <Button
                         android:id="@+id/btnLlamar"
-                        android:text="1800-335486 (delito)"
+                        android:text="1800-332433 (DECIDE)"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:padding="15dip"

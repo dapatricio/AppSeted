@@ -2,16 +2,23 @@ apply plugin: 'com.android.application'
 
 android {
     signingConfigs {
+        SETED {
+            keyAlias 'key_seted'
+            keyPassword 'DaPatr1c10.1994'
+            storeFile file('C:/Users/dapat/Desktop/KeySETED_NO_BORRAR/Key_setedapp.jks')
+            storePassword 'DaPatr1c10.1994'
+        }
     }
     compileSdkVersion 23
-    buildToolsVersion "22.0.1"
+    buildToolsVersion "23.0.2"
     defaultConfig {
         applicationId "com.seted.prevencionec"
-        minSdkVersion 21
+        minSdkVersion 17
         targetSdkVersion 21
-        versionCode 5
-        versionName '1.4'
+        versionCode 8
+        versionName '1.7.0'
         multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -20,6 +27,9 @@ android {
         }
     }
     productFlavors {
+        PrevencionDrogasEc {
+            signingConfig signingConfigs.SETED
+        }
     }
 }
 
@@ -29,7 +39,6 @@ dependencies {
     compile files('libs/picasso-2.5.2.jar')
     compile files('libs/library-2.4.0.jar')
     compile files('libs/library-1.1.5-sources.jar')
-
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:design:23.4.0'
     compile 'com.android.support:recyclerview-v7:23.4.0'

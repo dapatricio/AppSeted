@@ -9,15 +9,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.seted.prevencionec.R;
 
-public class Actividad_lista extends AppCompatActivity {
-        TableRow tabla1, tabla2, tabla3, tabla4;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.ListView;
+
+public class Actividad_lista extends Activity {
+        /*TableRow tabla1, tabla2, tabla3, tabla4;
         String canton, centroSalud1;
         TextView textCant, textCant1, textCant2, textCant3, nombCent1, nombCent2, nombCent3, nombCent4;
         double lat1, lng1, lat2, lng2, lat3, lng3, lat4, lng4;
@@ -278,6 +287,75 @@ public class Actividad_lista extends AppCompatActivity {
                     startActivity(info1);
                 }
             });
-        }
+        }*/
+        ListViewAdapter adapter;
+
+    String[] titulo = new String[]{
+            "titulo1",
+            "titulo2",
+            "titulo3",
+            "titulo4",
+    };
+    String[] subtitulo1 = new String[]{
+            "subtitulo1",
+            "subtitulo2",
+            "subtitulo3",
+            "subtitulo4",
+    };
+    String[] subtitulo2 = new String[]{
+            "subtitulo1.1",
+            "subtitulo2.1",
+            "subtitulo3.1",
+            "subtitulo4.1",
+    };
+
+    int[] imagenes = {
+            R.drawable.hospital,
+            R.drawable.hospital,
+            R.drawable.hospital,
+            R.drawable.hospital,
+    };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.actividad_lista);
+
+        final ListView lista = (ListView) findViewById(R.id.lista_centros);
+        adapter = new ListViewAdapter(this, titulo, subtitulo1, subtitulo2, imagenes);
+        lista.setAdapter(adapter);
+
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView adapterView, View view, int i, long l) {
+                Toast.makeText(getApplicationContext(), "presiono " + i, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        lista.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView adapterView, View view, int i, long l) {
+                Toast.makeText(getApplicationContext(), "presiono LARGO " + i, Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        });
+
+        ImageButton btn = (ImageButton)findViewById(R.id.btnBack);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+        ImageButton btn1 = (ImageButton)findViewById(R.id.btnHome);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent info1 = new Intent("com.seted.prevencionec.ui.ActividadPrincipal");
+                startActivity(info1);
+            }
+        });
+    }
 }
 

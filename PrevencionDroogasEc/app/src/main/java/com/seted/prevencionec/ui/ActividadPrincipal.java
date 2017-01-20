@@ -125,14 +125,14 @@ public class ActividadPrincipal extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
+    /*@Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             //preventing default implementation previous to android.os.Build.VERSION_CODES.ECLAIR
             return true;
         }
         return super.onKeyDown(keyCode, event);
-    }
+    }*/
 
 
 }

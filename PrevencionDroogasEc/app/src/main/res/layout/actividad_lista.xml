@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:background="@color/primaryColor">
+        android:background="@color/primaryColor"
+        android:id="@+id/linearLayout">
 
         <TableRow
             android:layout_width="wrap_content"
@@ -60,370 +61,32 @@
         </TableRow>
 
     </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp">
 
-    <ScrollView
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lista_centros"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+
+    <TextView
+        android:text="Selecciona el Centro de Salud mas cercano:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="5dp">
+        android:id="@+id/textView1"
+        android:padding="5dip"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
 
-            <TableLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:text="Selecciona el Centro de Salud mas cercano:"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView1"
-                    android:layout_margin="10dip"
-                    android:padding="5dip"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:onClick="centros1"
-                    android:id="@+id/tabla1"
-                    android:background="#fff"
-                    android:layout_marginTop="5dip">
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:padding="1dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/hospital" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="15dip"
-                        android:background="@drawable/back"
-                        android:padding="5dip">
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Canton:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView2"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text="Loja"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/nomCant1"
-                                android:padding="5dip"
-                                android:textSize="15sp"/>
-                        </TableRow>
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Nombre:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView4"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text=""
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="5dip"
-                                android:id="@+id/nomCent1"
-                                android:textSize="15sp"/>
-                        </TableRow>
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Teléfono:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView6"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text="0999999999"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/numCent1"
-                                android:padding="5dip"
-                                android:textSize="15sp"/>
-                        </TableRow>
-                    </LinearLayout>
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:onClick="centros2"
-                    android:id="@+id/tabla2"
-                    android:background="#fff"
-                    android:layout_marginTop="5dip">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:padding="1dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/hospital"
-                        android:id="@+id/imageView2" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="15dip"
-                        android:background="@drawable/back"
-                        android:padding="5dip">
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Canton:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView21"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text="Loja"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/nomCant2"
-                                android:padding="5dip"
-                                android:textSize="15sp"/>
-                        </TableRow>
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Nombre:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView41"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text="Centro de Salud #2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="5dip"
-                                android:id="@+id/nomCent2"
-                                android:textSize="15sp"/>
-                        </TableRow>
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Teléfono:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView61"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text="0999999999"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/numCent2"
-                                android:padding="5dip"
-                                android:textSize="15sp"/>
-                        </TableRow>
-
-                    </LinearLayout>
-                </TableRow>
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:onClick="centros3"
-                    android:id="@+id/tabla3"
-                    android:background="#fff"
-                    android:layout_marginTop="5dip">
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:padding="1dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/hospital" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="15dip"
-                        android:background="@drawable/back"
-                        android:padding="5dip">
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Canton:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView22"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text="Loja"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/nomCant3"
-                                android:padding="5dip"
-                                android:textSize="15sp"/>
-                        </TableRow>
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Nombre:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView42"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text="Centro de Salud #3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="5dip"
-                                android:id="@+id/nomCent3"
-                                android:textSize="15sp"/>
-                        </TableRow>
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Teléfono:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView62"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text="0999999999"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/numCent3"
-                                android:padding="5dip"
-                                android:textSize="15sp"/>
-                        </TableRow>
-                    </LinearLayout>
-                </TableRow>
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:onClick="centros4"
-                    android:id="@+id/tabla4"
-                    android:background="#fff"
-                    android:layout_marginTop="5dip"
-                    android:layout_marginBottom="15dp">
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:padding="1dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/hospital" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginRight="15dip"
-                        android:background="@drawable/back"
-                        android:padding="5dip">
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Canton:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView16"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text="Loja"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/nomCant4"
-                                android:padding="5dip"
-                                android:textSize="15sp"/>
-                        </TableRow>
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Nombre:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView14"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text="Centro de Salud #4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="5dip"
-                                android:id="@+id/nomCent4"
-                                android:textSize="15sp"/>
-                        </TableRow>
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                            <TextView
-                                android:text="Teléfono:"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/textView11"
-                                android:padding="5dip"
-                                android:textSize="15sp"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:text="0999999999"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/numCent4"
-                                android:padding="5dip"
-                                android:textSize="15sp"/>
-                        </TableRow>
-                    </LinearLayout>
-                </TableRow>
-            </TableLayout>
-        </LinearLayout>
-    </ScrollView>
 </RelativeLayout>

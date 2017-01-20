@@ -50,9 +50,8 @@ public class Principal extends AppCompatActivity {
                 if (user == null) {
                     // user auth state is changed - user is null
                     // launch login activity
-                    Intent info = new Intent("com.seted.prevencionec.ui.LoginActivity");
-                    startActivity(info);
-                    auth.signOut();
+                    startActivity(new Intent(Principal.this, LoginActivity.class));
+                    finish();
                 }
             }
         };

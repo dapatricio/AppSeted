@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Daniel Peñarreta.
+  ~ Copyright (c) 2016.  All rights reserved.
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="10dip" />
+
+                <solid android:color="#e53429" />
+            </shape>
+        </clip>
+
+        <color android:color="#e53429" />
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="10dip" />
+
+                <solid android:color="#e53429" />
+            </shape>
+        </clip>
+
+        <color android:color="#e53429" />
+    </item>
+
+</layer-list>

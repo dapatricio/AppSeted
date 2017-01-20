@@ -112,9 +112,9 @@ public class FragmentoCategorias extends android.support.v4.app.Fragment  {
                         Toast toast = Toast.makeText(getContext(), texto1, Toast.LENGTH_LONG);
                         toast.show();
                         Intent info = new Intent("com.seted.prevencionec.ui.ActividadLista");
-                        Bundle b = new Bundle();
+                        /*Bundle b = new Bundle();
                         b.putString("canton", texto1);
-                        info.putExtras(b);
+                        info.putExtras(b);*/
                         startActivity(info);
                     }
                 });{

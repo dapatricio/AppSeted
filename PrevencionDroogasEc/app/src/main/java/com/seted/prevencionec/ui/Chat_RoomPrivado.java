@@ -5,9 +5,11 @@
 
 package com.seted.prevencionec.ui;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -64,8 +66,8 @@ public class Chat_RoomPrivado extends AppCompatActivity {
 
         DatabaseReference message_root = root.child(temp_key);
         Map<String,Object> map2 = new HashMap<String, Object>();
-        map2.put("name", "Secretaria Técnica de Drogas");
-        map2.put("msg", "\nHola "+usuario+".\nBienvenido a nuestro Chat en Linea.");
+        map2.put("name", ":");
+        map2.put("msg", "\nHola "+usuario+".\nBienvenido a nuestro Chat en Linea.\nRecuerda que te atenderemos en horario Lunes a Viernes de 08:30am a 17:30pm.");
 
         message_root.updateChildren(map2);
 
@@ -134,6 +136,18 @@ public class Chat_RoomPrivado extends AppCompatActivity {
             chat_msg = (String) ((DataSnapshot)i.next()).getValue();
             chat_user_name = (String) ((DataSnapshot)i.next()).getValue();
             textoEscrito.append(chat_user_name+ " : "+ chat_msg+" \n");
+            if (chat_user_name.equals("seted"+"@gmail.com")){
+                AlertDialog.Builder dialogo = new AlertDialog.Builder(this);
+                dialogo.setMessage("entro en el mensaje");
+                dialogo.setPositiveButton("Ok",new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                AlertDialog dialogChat = dialogo.create();
+                dialogChat.show();
+            };
         }
     }
 }
